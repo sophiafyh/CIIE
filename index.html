@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>东方之约，美美与共——中国国际进口博览会</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/othoer.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script>
+        //让元素显示：
+        function showDetail(i) {
+            detail = document.getElementById(i);
+            detail.style.display = "block";
+        }
+        //让元素消失：
+        function hideDetail(i) {
+            detail = document.getElementById(i);
+            detail.style.display = "none";
+        }
+        document.all('txtComments').style.overfloe - y(visible)
+
+        function show(x, y) {
+            document.getElementById(x).style.opacity = 0.6;
+            document.getElementById(y).style.display = 'block';
+        }
+
+        function hide(x, y) {
+            document.getElementById(x).style.opacity = 1;
+            document.getElementById(y).style.display = 'none';
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- 首页开始 -->
+    <div class="top">
+        <div class="bg">
+            <video src="video/bg.MP4" autoplay loop muted class="bg1">该版本不支持播放视频，请升级您的浏览器！</video>
+            <img src="img/blue.png" alt="" class="bg2">
+            <img src="img/baiyun1.png" alt="" class="bg8">
+            <img src="img/baiyun2.png" alt="" class="bg9">
+            <img src="img/logo.png" alt="" class="bg3">
+            <img src="img/jinbao.png" alt="" class="bg4">
+            <img src="img/hello.png" alt="" class="bg5">
+            <img src="img/shanghai.png" alt="" class="bg6">
+            <img src="img/wenzi.png" alt="" class="bg7">
+        </div>
+        <div class="nav">
+            <a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+            <a href="#jbjs" class="active">进博介绍</a>
+            <a href="#zpzq">展品展区</a>
+            <a href="#rwjl">人文交流</a>
+            <a href="wjhg.html" target="_blank">往届回顾</a>
+            <div id="nav-left" class="change"></div>
+        </div>
+    </div>
+    <script>
+        let marker = document.querySelector('#nav-left');
+        let nav = document.querySelector('.nav');
+        let item = document.querySelectorAll('.nav a');
+        nav.onclick = function() {
+            marker.classList.toggle('change');
+        }
+
+        function indicator(e) {
+            marker.style.left = e.offsetLeft + 'px';
+            marker.style.width = e.offsetWidth + 'px';
+            marker.style.display = "block";
+            marker.style.filter = 'hue-rotate(' + Math.random() * 0 + 'deg)'
+        }
+        item.forEach(link => {
+            link: addEventListener("click", (e) => {
+                indicator(e.target);
+            })
+        })
+
+        function addActiveClass() {
+            item.forEach((i) =>
+                i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        item.forEach((i) =>
+            i.addEventListener('click', addActiveClass));
+    </script>
+    <!-- 首页结束 -->
+    <!-- 进博介绍开始 -->
+    <div class="tow">
+        <a href="" name="jbjs"></a>
+        <div><img src="img/zi-js.png" alt=""></div>
+        <div class="tu">
+            <img src="img/wan.png" alt="" class="wan">
+            <img src="img/xiong1.png" alt="" class="xiong1">
+            <img src="img/yun-hdbj.png" alt="" class="yun1">
+            <img src="img/yun-zbdw.png" alt="" class="yun2">
+            <img src="img/yun-zhsj.png" alt="" class="yun3">
+            <img src="img/yun-jbgm.png" alt="" class="yun4">
+            <img src="img/yun-zhdd.png" alt="" class="yun5">
+            <img src="img/yun-ztkh.png" alt="" class="yun6">
+            <img src="img/sj.png" alt="" class="sj">
+            <div class="news1">
+                <textarea id="tetComments" style="overflow-y: hidden;">举办中国国际进口博览会由习近平主席亲自谋划、亲自提出、亲自部署、亲自推动，是中国着眼推进新一轮高水平对外开放作出的一项重大决策，是中国主动向世界开放市场的重大举措。 世界上第一个以进口为主题的国家级展会，已连续五届成功举办。国家主席习近平连续三年在中国国际进口博览会开幕式发表主旨演讲，表示经过3年发展，进博会让展品变商品、让展商变投资商，交流创意和理念，联通中国和世界，成为国际采购、投资促进、人文交流、开放合作的四大平台，成为全球共享的国际公共产品。
+            </textarea>
+            </div>
+            <div class="news2">
+                <textarea id="tetComments" style="overflow-y: hidden;">中华人民共和国商务部,上海市人民政府
+            </textarea>
+            </div>
+            <div class="news3">
+                <textarea id="tetComments" style="overflow-y: hidden;">本届进博会的规模创下历史新高，占地面积超过36万平方米，展示了广泛的商品和服务。从食品、医药、汽车到科技、服务业，各个领域都有独具特色的展区。
+            </textarea>
+            </div>
+            <div class="news4">
+                <textarea id="tetComments" style="overflow-y: hidden;">国家会展中心（上海）
+            </textarea>
+            </div>
+            <div class="news5">
+                <textarea id="tetComments" style="overflow-y: hidden;">新时代，共享未来
+            </textarea>
+            </div>
+        </div>
+    </div>
+    <div class="hezi">
+        <a href="" name="zpzq"></a>
+        <div class="main">
+            <img src="img/zi-zpzq.png" alt="" class="bg">
+            <img src="img/xian.png" alt="" class="xian">
+            <div class="main_left">
+                <img src="img/home1016.png" alt="" class="home1">
+                <!-- 1 -->
+                <div class="pointer01" onmouseover="showDetail('zq')"></div>
+                <div class="zq" id="zq" onmouseout="hideDetail('zq')">
+                    <div class="zq_text">
+                        <p>
+                            <h2>食品及农产品展区</h2>
+                            乳制品&nbsp;蔬果和农产品&nbsp;饮料和酒类&nbsp;肉类&nbsp;水产品&nbsp;冷冻食品&nbsp;休闲时品&nbsp;甜食&nbsp;调味品&nbsp;综合食品&nbsp;其他
+                        </p>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="pointer02" onmouseover="showDetail('zq2')"></div>
+                <div class="zq2" id="zq2" onmouseout="hideDetail('zq2')">
+                    <div class="zq2_text">
+                        <p>
+                            <h2>汽车展区</h2>
+                            整车&nbsp;汽车零部件及智慧出行&nbsp;汽车配套和养护&nbsp;其他
+                        </p>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="pointer03" onmouseover="showDetail('zq3')"></div>
+                <div class="zq3" id="zq3" onmouseout="hideDetail('zq3')">
+                    <div class="zq3_text">
+                        <p>
+                            <h2>技术装备区</h2>
+                            数字工业自动化&nbsp;集成电路&nbsp;能源低碳及环保技术&nbsp;人工智能&nbsp;数字打印及光学技术&nbsp;航空航天&nbsp;其他
+                        </p>
+                    </div>
+                </div>
+                <!-- 4 -->
+                <div class="pointer04" onmouseover="showDetail('zq4')"></div>
+                <div class="zq4" id="zq4" onmouseout="hideDetail('zq4')">
+                    <div class="zq4_text">
+                        <p>
+                            <h2>消费品展区</h2>
+                            美妆及日化用品&nbsp;家电及消费电子&nbsp;家居及家饰设计&nbsp;时尚服装及配饰&nbsp;宝石及珠宝&nbsp;文物艺术品&nbsp;体育用品&nbsp;体育赛事及电竞&nbsp;其他
+                        </p>
+                    </div>
+                </div>
+                <!-- 5 -->
+                <div class="pointer05" onmouseover="showDetail('zq5')"></div>
+                <div class="zq5" id="zq5" onmouseout="hideDetail('zq5')">
+                    <div class="zq5_text">
+                        <p>
+                            <h2>医疗器械及医药保健展区</h2>
+                            药品&nbsp;医疗器械&nbsp;公共卫生防疫&nbsp;医疗美容&nbsp;养老康复及辅助产品&nbsp;健康护理&nbsp;医疗旅游&nbsp;医疗技术与服务&nbsp;营养保健食品
+                        </p>
+                    </div>
+                </div>
+                <!-- 6 -->
+                <div class="pointer06" onmouseover="showDetail('zq6')"></div>
+                <div class="zq6" id="zq6" onmouseout="hideDetail('zq6')">
+                    <div class="zq6_text">
+                        <p>
+                            <h2>服务贸易展区</h2>
+                            商业服务&nbsp;检验检测服务&nbsp;建筑服务&nbsp;商业银行服务&nbsp;非银行金融服务&nbsp;金融信息与科技服务&nbsp;文化服务&nbsp;旅游服务&nbsp;娱乐服务&nbsp;物流服务&nbsp;会展服务&nbsp;知识产权及IP授权服务&nbsp;供应链管理&nbsp;综合服务
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="an">
+                <button><a href="zs.html" target="_blank">点击此处查看展商详情</a></button>
+            </div>
+            <div class="an2">
+                <button><a href="zp.html" target="_blank">点击此处查看展品详情</a></button>
+            </div>
+        </div>
+        <!-- 展区结束 -->
+        <!-- 友人汇开始 -->
+        <a href="" name="rwjl"></a>
+        <div class="yrh">
+            <img src="img/zi-yrh.png" alt="" class="yrhbg">
+            <div class="swiper">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/zyz.jpg" alt="">
+                            <span><a href="xyz.html" target="_blank">小叶子·志愿者群像（中国）</a></span>
+                        </div>
+                        <div class="swiper-slide"><img src="img/zca.png" alt=""><span>张晨安（中国）</span></div>
+                        <div class="swiper-slide"><img src="img/mmn.jpg" alt=""><span>奥斯瓦尔多·马马尼（秘鲁）</span></div>
+                        <div class="swiper-slide"><img src="img/lina.jpg" alt=""><span>卡塔（阿根廷）</span></div>
+                        <div class="swiper-slide"><img src="img/dmks.png" alt=""><span>奥克森（丹麦）</span></div>
+                        <div class="swiper-slide"><img src="img/feisi.jpg" alt=""><span>费丝·切贝特（肯尼亚）</span></div>
+                        <div class="swiper-slide"><img src="img/ldl.jpg" alt=""><span>李德龙（斯里兰卡）</span></div>
+                        <div class="swiper-slide"><img src="img/makls.jpg" alt=""><span>马可·卢索（意大利）</span></div>
+                        <div class="swiper-slide"><img src="img/ximeng.jpg" alt=""><span>西蒙·阿多韦兰德（贝宁）</span></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+        <script src="js/swiper.js"></script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                slidesPerView: 3,
+                spaceBetween: 30,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                centeredSlides: true,
+                coverflowEffect: {
+                    stretch: -50,
+                    depth: 100,
+                    slideShadows: false,
+                    modifier: 1
+                },
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+        <!-- 友人汇结束 -->
+        <!-- 人文交流开始 -->
+        <div class="san">
+            <img src="img/zi-rwjl.png" alt="">
+            <div class="swipe">
+                <input type="radio" name="indicator" id="indicator1" checked hidden>
+                <label for="indicator1"></label>
+                <input type="radio" name="indicator" id="indicator2" hidden>
+                <label for="indicator2"></label>
+                <input type="radio" name="indicator" id="indicator3" hidden>
+                <label for="indicator3"></label>
+                <input type="radio" name="indicator" id="indicator4" hidden>
+                <label for="indicator4"></label>
+                <ul>
+                    <li><img src="img/rwjl2.jpg" alt=""></li>
+                    <li><img src="img/rwjl1.jpg" alt=""></li>
+                    <li><img src="img/rwjl3.jpg" alt=""></li>
+                    <li><img src="img/rwjl4.jpeg" alt=""></li>
+                </ul>
+            </div>
+            <div class="san-right">
+                <ul>
+                    <li><a>国际“新品秀”！全球创新力量助力建设“健康中国”</a>
+                        <p>第六届进博会医疗器械及医药保健展区以“健康，共享美好生活”为主题，把助力健康中国建设作为重中之重。新药物、新疗法、新方案……“四叶草”里，一大批国际领先的医疗创新产品、尖端技术和服务集中亮相，上演了一场国际“新品秀”。</p>
+                    </li><br>
+                    <li><a>大饱眼福！进博会上的跨时空艺术巡礼</a>
+                        <p>当闪耀的艺术之光汇聚于“四叶草”，距离便不再是鉴赏世界艺术瑰宝的阻碍。第六届进博会消费品展区设立的文物艺术品板块搭建起一座艺术殿堂，将中外艺术大师的珍品带给观众一饱眼福。佳士得、苏富比、富艺斯世界三大拍卖行的倾情参与，以及佩斯、厉蔚阁等国际知名画廊的精彩呈现，共同铸就了这里的独特魅力。</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 图观进博开始 -->
+        <div class="main2 ">
+            <div class="tgjbbg "><img src="img/zi-tgjb.png " alt=" " class="tgjb "></div>
+            <div class="tubiao1 ">
+                <dl class="clearfix">
+                    <dt onMouseOver="show('img01','text01')" onMouseOut="hide('img01','text01')">第一届</dt>
+                    <dd id="img01" onMouseOver="show('img01','text01')" onMouseOut="hide('img01','text01')"></dd>
+                    <dd id="text01" class="text">578.3</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt onMouseOver="show('img02','text02')" onMouseOut="hide('img02','text02')">第二届</dt>
+                    <dd id="img02" onMouseOver="show('img02','text02')" onMouseOut="hide('img02','text02')"></dd>
+                    <dd id="text02" class="text">711.3</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt onMouseOver="show('img03','text03')" onMouseOut="hide('img03','text03')">第三届</dt>
+                    <dd id="img03" onMouseOver="show('img03','text03')" onMouseOut="hide('img03','text03')"></dd>
+                    <dd id="text03" class="text">726.2</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt onMouseOver="show('img04','text04')" onMouseOut="hide('img04','text04')">第四届</dt>
+                    <dd id="img04" onMouseOver="show('img04','text04')" onMouseOut="hide('img04','text04')"></dd>
+                    <dd id="text04" class="text">707.2</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt onMouseOver="show('img05','text05')" onMouseOut="hide('img05','text05')">第五届</dt>
+                    <dd id="img05" onMouseOver="show('img05','text05')" onMouseOut="hide('img05','text05')"></dd>
+                    <dd id="text05" class="text">735.2</dd>
+                </dl>
+                <dl class="clearfix">
+                    <dt onMouseOver="show('img06','text06')" onMouseOut="hide('img06','text06')">第六届</dt>
+                    <dd id="img06" onMouseOver="show('img06','text06')" onMouseOut="hide('img06','text06')"></dd>
+                    <dd id="text06" class="text">784.1</dd>
+                </dl>
+                <p>（单位：亿美元）</p>
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历届进博会的累计意向成交额</h3>
+
+            </div>
+            <div class="wz ">
+                <span class="c ">第六届进博会取得丰硕成果。</span>
+                <p class="z ">按一年计意向成交金额
+                    <span class="sz1 ">784.1</span>
+                    <span class="z ">亿美元，比上届增长</span>
+                    <span class="sz1 ">6.7%</span>
+                    <span class="z ">。</span>
+                </p>
+                <p class="z ">第七届筹备工作已全面铺开，已举办
+                    <span class="sz1 ">4</span>场签约仪式</p>
+                <p class="z ">累计近<span class="sz1 ">200</span>家企业提前签约参展，展览面积超过<span class="sz1 ">10</span>万平方米。</p>
+
+            </div>
+            <div class="wz2 ">
+
+                <span class="c ">东方之约，美美与共</span>
+                <p class="z ">共计有
+                    <span class="sz1 ">8000</span>
+                    <span class="z ">余名中外嘉宾出席论坛。</span>
+
+                </p>
+                <p class="z "> 除主论坛外，还举办了聚焦全球产业链、数字经济、
+
+                    <p class="z ">绿色投资贸易、保护知识产权、南南合作等热点话题的
+                        <span class="sz1 "> 22</span>场分论坛。</p>
+
+            </div>
+            <div class="tb">
+                <div id="container" style="height: 100%"></div>
+
+
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
+
+                <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/extension/dataTool.min.js"></script>
+  -->
+                <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+                <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+                <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/china.js"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+                <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/extension/bmap.min.js"></script>
+  -->
+
+                <script type="text/javascript">
+                    var dom = document.getElementById('container');
+                    var myChart = echarts.init(dom, null, {
+                        renderer: 'canvas',
+                        useDirtyRect: false
+                    });
+                    var app = {};
+
+                    var option;
+
+                    option = {
+                        title: {
+                            text: ''
+                        },
+                        tooltip: {
+                            trigger: 'axis',
+                            axisPointer: {
+                                type: 'cross',
+                                label: {
+                                    backgroundColor: '#6a7985'
+                                }
+                            }
+                        },
+                        legend: {
+                            data: ['参展国家、地区和国际组织总数', '世界500强和行业龙头企业数量', '展览规模总面积', '中国馆规模', '发布新产品、新技术、新服务']
+                        },
+                        toolbox: {
+                            feature: {
+                                saveAsImage: {}
+                            }
+                        },
+                        grid: {
+                            left: '3%',
+                            right: '4%',
+                            bottom: '3%',
+                            containLabel: true
+                        },
+                        xAxis: [{
+                            type: 'category',
+                            boundaryGap: false,
+                            data: ['第一届', '第二届', '第三届', '第四届', '第五届', '第六届']
+                        }],
+                        yAxis: [{
+                            type: 'value'
+                        }],
+                        series: [{
+                            name: '参展国家、地区和国际组织总数 （单位：个）',
+                            type: 'line',
+                            stack: 'Total',
+                            areaStyle: {},
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: [172, 181, 124, 127, 145, 154]
+                        }, {
+                            name: '世界500强和行业龙头企业数量 （单位：家）',
+                            type: 'line',
+                            stack: 'Total',
+                            areaStyle: {},
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: [220, 288, 274, 274, 284, 289]
+                        }, {
+                            name: '展览规模总面积 （单位：万平方米）',
+                            type: 'line',
+                            stack: 'Total',
+                            areaStyle: {},
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: [30, 36, 36, 36.6, 36.6, 36.7]
+                        }, {
+                            name: '中国馆规模 （单位：平方米）',
+                            type: 'line',
+                            stack: 'Total',
+                            areaStyle: {},
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: [1472, 1500, 1500, 1500, 1500, 2500]
+                        }, {
+                            name: '发布新产品、新技术、新服务 （单位：项）',
+                            type: 'line',
+                            stack: 'Total',
+                            label: {
+                                show: true,
+                                position: 'top'
+                            },
+                            areaStyle: {},
+                            emphasis: {
+                                focus: 'series'
+                            },
+                            data: [100, 400, 411, 422, 438, 442]
+                        }]
+                    };
+
+                    if (option && typeof option === 'object') {
+                        myChart.setOption(option);
+                    }
+
+                    window.addEventListener('resize', myChart.resize);
+                </script>
+
+            </div>
+            <div class="tb2">
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;历届进博会相关数据</h3>
+            </div>
+            <!-- 图观进博结束 -->
+        </div>
+        <!-- 图观进博结束 -->
+
+
+    </div>
+    <!-- 页脚开始 -->
+    <div class="footer">
+        <img src="img/yjbg.png" alt="" class="bg">
+        <div class="footer_content">
+            <img src="img/jxw.png" alt="">
+        </div>
+        <div class="footer_1">
+            <h3>指导老师</h3>
+            <ul class="ul">
+                <li>凡娅慧</li>
+                <li>毛&nbsp;&nbsp;&nbsp;艳</li>
+            </ul>
+        </div>
+        <div class="footer_zu">
+            <div class="footer_zu1">
+                <h3>团队成员</h3>
+                <ul class="ul">
+                    <li>张宇凡</li>
+                    <li>张&nbsp;&nbsp;&nbsp;宁</li>
+                    <li>张安琪</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_text">
+            <h3>资料来源</h3>
+            <ul class="ul">
+                <li>进口博览会官网</li>
+                <li>中国国家统计局</li>
+                <li>中国经济时报</li>
+                <li>央视新闻</li>
+            </ul>
+        </div>
+        <div class="xian">
+            <p>工具：Vscode&nbsp;Photoshop&nbsp;Echarts</p>
+        </div>
+
+    </div>
+</body>
+
+</html>
