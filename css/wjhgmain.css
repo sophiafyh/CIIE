@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../img/home-bg2.png);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.top {
+    background-image: url(../img/back2.png);
+    width: 100%;
+    height: 35vh;
+    position: relative;
+    top: 2%;
+    overflow: hidden;
+}
+
+.top .tp1 {
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.top .tp2 {
+    width: 20%;
+    float: right;
+    margin-right: 10%;
+    margin-top: 8%;
+    animation: tp2 2s linear 0s;
+    animation-fill-mode: both;
+}
+
+.top .tp3 {
+    width: 8%;
+    float: right;
+    margin-right: 3%;
+    margin-top: 4%;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: 75px;
+    position: absolute;
+    float: left;
+    margin-left: 40%;
+    align-items: center;
+    gap: 30px;
+    padding: 15px 60px;
+    overflow: hidden;
+}
+
+.nav a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 26px;
+    z-index: 2;
+    display: flex;
+    float: left;
+    left: 1%;
+    align-items: center;
+    padding: 0 30px;
+    transition: 0.5s;
+    height: 75px;
+}
+
+.nav a:active {
+    color: #000;
+}
+
+#nav-left {
+    position: absolute;
+    height: 75px;
+    width: 190px;
+    background-color: #1570b9;
+    z-index: 1;
+    transition: 0.5s;
+    float: right;
+    margin-right: 5%;
+}
+
+#nav-left::before {
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 50px;
+    height: 15px;
+    background: #1570b9;
+    border-radius: 15px;
+    box-shadow: 15px 30px #1570b9, 5px 60px#1570b9, -15px 15px#afdbf1, -10px 45px#afdbf1;
+    transition: 0.5s;
+}
+
+#nav-left::after {
+    content: '';
+    position: absolute;
+    right: -20px;
+    width: 50px;
+    height: 15px;
+    background: #1570b9;
+    border-radius: 15px;
+    box-shadow: 5px 30px #1570b9, -15px 60px #1570b9, 15px 15px#afdbf1, 10px 45px#afdbf1;
+}
+
+#nav-left.change::before {
+    left: -8px;
+    box-shadow: -15px 30px #1570b9, -5px 60px #1570b9, -10px 15px#afdbf1, -20px 45px#afdbf1;
+}
+
+#nav-left.change::after {
+    right: -20px;
+    box-shadow: 10px 30px #1570b9, 20px 60px #1570b9, 15px 15px#afdbf1, 25px 45px#afdbf1;
+}
+
+.main {
+    width: 70%;
+    height: 200vh;
+    background-color: #fff;
+    position: relative;
+    float: left;
+    overflow: hidden;
+    padding: 50px 5%;
+}
+
+.post {
+    position: absolute;
+    top: 10%;
+    left: 18%;
+}
+
+.box {
+    background-image: url(../img/wjhgb.png);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 200px;
+    margin: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+.box h2 {
+    font-size: 45px;
+}
+
+.box a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* 页脚开始 */
+
+.footer {
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    background-color: rgb(54, 55, 56);
+}
+
+.footer img .bg {
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 0;
+    opacity: 40%;
+}
+
+.footer .xian {
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 2em;
+    border-top: 2px solid #d2d2d2;
+    position: absolute;
+    bottom: 8%;
+}
+
+.footer .footer_content {
+    width: 20%;
+    display: block;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+.footer .footer_1 {
+    position: absolute;
+    top: 10%;
+    height: 72%;
+    left: 30%;
+    width: 30%;
+    color: #fff;
+    padding: 30px;
+    margin: auto;
+    font-size: 24px;
+}
+
+.footer .footer_zu {
+    position: absolute;
+    top: 10%;
+    height: 72%;
+    left: 45%;
+    width: 30%;
+    color: #fff;
+    padding: 30px;
+    margin: auto;
+}
+
+.footer .footer_zu .footer_zu1 {
+    font-size: 24px;
+}
+
+.footer .footer_text {
+    position: absolute;
+    top: 10%;
+    height: 72%;
+    left: 60%;
+    width: 30%;
+    color: #fff;
+    padding: 30px;
+    margin: auto;
+    font-size: 24px;
+}
+
+.footer .ul {
+    position: absolute;
+    top: 22%;
+    left: 4%;
+    width: 40%;
+    color: #fff;
+    padding: 30px;
+    line-height: 32px;
+    margin: auto;
+    font-size: 18px;
+    list-style-type: circle;
+}
+
+@keyframes tp2 {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

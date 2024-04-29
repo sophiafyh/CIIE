@@ -1,0 +1,83 @@
+h1 {
+    color: #fff;
+    margin: 0 20px;
+}
+
+.swiper-container {
+    width: 1300px;
+    height: 500px;
+}
+
+.swiper-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 500px;
+    height: 400px;
+    flex-direction: column;
+    text-align: center;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.8);
+}
+
+.swiper-slide img {
+    width: 50%;
+    height: 250px;
+    border: 1px solid rgb(176, 226, 247);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.swiper-slide span {
+    display: block;
+    width: 50%;
+    height: 50px;
+    color: #fff;
+    font-size: 18px;
+    border: 1px solid aca6a6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: #aca6a6;
+    position: relative;
+    top: -15px;
+    z-index: 1;
+}
+
+.swiper-slide-active,
+.swiper-slide-duplicate-active {
+    transform: scale(1.2);
+}
+
+.swiper-button-next {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px rgb(131, 227, 240);
+}
+
+.swiper-button-prev {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px rgb(131, 227, 240);
+}

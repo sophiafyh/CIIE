@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background-image: url(../img/home-bg2.png);
+}
+
+.main .xiong1 {
+    width: 8%;
+    height: 17%;
+    position: fixed;
+    bottom: 4%;
+    right: 4%;
+    z-index: 10;
+}
+
+.main .wxts {
+    width: 16%;
+    position: fixed;
+    top: 15%;
+    left: 3%;
+    z-index: 10;
+}
+
+.main {
+    width: 76%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    left: 12%;
+    overflow: hidden;
+}
+
+.main .zs {
+    position: absolute;
+    top: 2%;
+    left: 0%;
+}
+
+.main .xfp {
+    position: absolute;
+    top: 10%;
+    left: 6%;
+}
+
+
+/* 1 */
+
+.main .pointer01 {
+    width: 4%;
+    height: 2%;
+    position: absolute;
+    left: 19.8%;
+    top: 21.5%;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.main .xfp1 {
+    width: 30%;
+    position: absolute;
+    left: 12%;
+    top: 28%;
+    display: none;
+    animation: fadeIn 1s linear;
+}
+
+.main .xfp1 .xfp1_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(52, 115, 166, 0.9);
+    color: #fff;
+    padding: 10%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* 2 */
+
+.main .pointer02 {
+    width: 4%;
+    height: 2%;
+    position: absolute;
+    left: 45.5%;
+    top: 28%;
+    /* background-color: rgba(223, 1, 16, 0.9); */
+}
+
+.main .xfp2 {
+    width: 30%;
+    position: absolute;
+    left: 33%;
+    top: 33%;
+    display: none;
+    animation: fadeIn 1s linear;
+}
+
+.main .xfp2 .xfp2_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 61, 149, 0.9);
+    color: #fff;
+    padding: 8%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.main .fwmy {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+}
+
+
+/* 3 */
+
+.main .pointer03 {
+    width: 4%;
+    height: 2%;
+    position: absolute;
+    left: 36%;
+    top: 50%;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.main .fwmy3 {
+    width: 30%;
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    display: none;
+    animation: fadeIn 1s linear;
+}
+
+.main .fwmy3 .fwmy3_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(244, 162, 81, 0.9);
+    color: #fff;
+    padding: 8%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* 4 */
+
+.main .pointer04 {
+    width: 9%;
+    height: 2%;
+    position: absolute;
+    left: 59%;
+    top: 56.5%;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.main .fwmy4 {
+    width: 20%;
+    position: absolute;
+    left: 54%;
+    top: 60%;
+    display: none;
+    animation: fadeIn 1s linear;
+}
+
+.main .fwmy4 .fwmy4_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(238, 127, 61, 0.9);
+    color: #fff;
+    padding: 8%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.main .qc {
+    position: absolute;
+    top: 70%;
+    left: 6%;
+}
+
+
+/* 5 */
+
+.main .pointer05 {
+    width: 5%;
+    height: 2%;
+    position: absolute;
+    left: 45%;
+    top: 88.5%;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.main .qc5 {
+    width: 30%;
+    position: absolute;
+    left: 35%;
+    top: 93%;
+    display: none;
+    animation: fadeIn 1s linear;
+}
+
+.main .qc5 .qc5_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(187, 0126, 207, 0.9);
+    color: #fff;
+    padding: 8%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+/* 6 */
+
+.main .pointer06 {
+    width: 6%;
+    height: 2%;
+    position: absolute;
+    left: 18%;
+    top: 90%;
+    /* background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.main .qc6 {
+    width: 30%;
+    position: absolute;
+    left: 10%;
+    top: 95%;
+    display: none;
+    animation: fadeIn 1s linear;
+}
+
+.main .qc6 .qc6_text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(191, 114, 200, 0.9);
+    color: #fff;
+    padding: 8%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
