@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/wjhgmain.css" />
+    <title>往届回顾——中国国际进口博览会</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script>
+        function show(x, y) {
+            document.getElementById(x).style.opacity = 0.6;
+            document.getElementById(y).style.display = 'block';
+        }
+
+        function hide(x, y) {
+            document.getElementById(x).style.opacity = 1;
+            document.getElementById(y).style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+    <!-- 导航栏开始 -->
+    <div class="top">
+        <img src="img/pclogo.png" alt="" class="tp1">
+        <img src="img/slogan.png" alt="" class="tp2">
+        <img src="img/wjhgjb.png" alt="" class="tp3">
+        <div class="nav">
+            <a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+            <a href="index.html" class="active">进博介绍</a>
+            <a href="index.html">展品展区</a>
+            <a href="index.html">人文交流</a>
+            <a href="index.html">往届回顾</a>
+            <div id="nav-left" class="change"></div>
+        </div>
+    </div>
+    <script>
+        let marker = document.querySelector('#nav-left');
+        let nav = document.querySelector('.nav');
+        let item = document.querySelectorAll('.nav a');
+        nav.onclick = function() {
+            marker.classList.toggle('change');
+        }
+
+        function indicator(e) {
+            marker.style.left = e.offsetLeft + 'px';
+            marker.style.width = e.offsetWidth + 'px';
+            marker.style.display = "block";
+            marker.style.filter = 'hue-rotate(' + Math.random() * 0 + 'deg)'
+        }
+        item.forEach(link => {
+            link: addEventListener("click", (e) => {
+                indicator(e.target);
+            })
+        })
+
+        function addActiveClass() {
+            item.forEach((i) =>
+                i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        item.forEach((i) =>
+            i.addEventListener('click', addActiveClass));
+    </script>
+    <div class="main">
+        <img src="img/wjhg.png" alt="" class="wjhg">
+        <div class="post">
+            <div class="box">
+                <h2><a href="sjhg.html" target="_blank">首届回顾</a></h2>
+            </div>
+            <div class="box">
+                <h2><a href="#">第二届回顾</a></h2>
+            </div>
+            <div class="box">
+                <h2><a href="#">第三届回顾</a></h2>
+            </div>
+            <div class="box">
+                <h2><a href="#">第四届回顾</a></h2>
+            </div>
+            <div class="box">
+                <h2><a href="#">第五届回顾</a></h2>
+            </div>
+            <div class="box">
+                <h2><a href="#">本届回顾</a></h2>
+            </div>
+        </div>
+    </div>
+    <script src="js/wjhg.js"></script>
+    <!-- 页脚开始 -->
+    <div class="footer">
+        <img src="img/yjbg.png" alt="" class="bg">
+        <div class="footer_content">
+            <img src="img/jxw.png" alt="">
+        </div>
+        <div class="footer_1">
+            <h3>指导老师</h3>
+            <ul class="ul">
+                <li>凡娅慧</li>
+                <li>毛&nbsp;&nbsp;&nbsp;艳</li>
+            </ul>
+        </div>
+        <div class="footer_zu">
+            <div class="footer_zu1">
+                <h3>团队成员</h3>
+                <ul class="ul">
+                    <li>张宇凡</li>
+                    <li>张&nbsp;&nbsp;&nbsp;宁</li>
+                    <li>张安琪</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_text">
+            <h3>资料来源</h3>
+            <ul class="ul">
+                <li>进口博览会官网</li>
+                <li>中国国家统计局</li>
+                <li>中国经济时报</li>
+                <li>央视新闻</li>
+            </ul>
+        </div>
+        <div class="xian">
+            <p>工具：Vscode&nbsp;Photoshop&nbsp;Echarts</p>
+        </div>
+    </div>
+</body>
+
+</html>

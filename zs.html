@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>参展展商——中国国际进口博览会</title>
+    <link rel="stylesheet" href="css/zsmain.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+</head>
+<script>
+    //让元素显示：
+    function showDetail(i) {
+        detail = document.getElementById(i);
+        detail.style.display = "block";
+    }
+    //让元素消失：
+    function hideDetail(i) {
+        detail = document.getElementById(i);
+        detail.style.display = "none";
+    }
+</script>
+
+<body>
+
+    <div class="main">
+        <img src="img/xiong1.png" alt="" class="xiong1">
+        <img src="img/yun-wxts.png" alt="" class="wxts">
+        <!-- <h1>进博会参展展商</h1> -->
+        <img src="img/zs.png" alt="" class="zs">
+        <img src="img/xfp.png" alt="" class="xfp">
+
+        <!-- 1 -->
+        <div class="pointer01" onmouseover="showDetail('xfp1')"></div>
+        <div class="xfp1" id="xfp1" onmouseout="hideDetail('xfp1')">
+            <div class="xfp1_text">
+                <p>
+                    <img src="img/dm.png" alt="" class="dm"> 黛米珠宝是上海黛米珠宝有限公司旗下品牌， 黛米珍珠在国际珍珠市场， 享有很高的声誉，产品出口远销欧洲、美洲、澳洲、日本、韩国、香港及东南亚等国家和地区。
+                </p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="pointer02" onmouseover="showDetail('xfp2')"></div>
+        <div class="xfp2" id="xfp2" onmouseout="hideDetail('xfp2')">
+            <div class="xfp2_text">
+                <p>
+                    <img src="img/mt.png" alt="" class="mt"> 茉汰Mootaa，高端家居清洁用品品牌，产品涵盖卫浴清洁、厨房清洁、家具清洁，家庭环境清洁，衣物清洁，管道疏通，鞋类清洁等多品类。
+                </p>
+            </div>
+        </div>
+        <img src="img/fwmy.png" alt="" class="fwmy">
+        <!-- 3 -->
+        <div class="pointer03" onmouseover="showDetail('fwmy3')"></div>
+        <div class="fwmy3" id="fwmy3" onmouseout="hideDetail('fwmy3')">
+            <div class="fwmy3_text">
+                <p>
+                    <img src="img/dhl.png" alt="" class="dhl"> DHL是全球著名的邮递和物流集团Deutsche Post DHL旗下的公司，DHL这个名称来自于三个公司创始人姓氏的首字母，他们是Adrian Dalsey、Larry Hillblom、Robert Lynn。
+                </p>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="pointer04" onmouseover="showDetail('fwmy4')"></div>
+        <div class="fwmy4" id="fwmy4" onmouseout="hideDetail('fwmy4')">
+            <div class="fwmy4_text">
+                <p>
+                    <img src="img/yy.png" alt="" class="yy"> 英壹商贸有限公司主要经营业务是在中国市场代理及销售英国进口的个人护理及婴童护理产品。
+                </p>
+            </div>
+        </div>
+        <img src="img/qc.png" alt="" class="qc">
+        <!-- 5 -->
+        <div class="pointer05" onmouseover="showDetail('qc5')"></div>
+        <div class="qc5" id="qc5" onmouseout="hideDetail('qc5')">
+            <div class="qc5_text">
+                <p>
+                    <img src="img/qy.png" alt="" class="qy"> 起亚即起亚汽车集团，是韩国最早的汽车制造商。2000年与现代集团合并成立现代起亚汽车集团。现代起亚汽车集团 是世界产量第五大的汽车生产商。
+                </p>
+            </div>
+        </div>
+        <!-- 6 -->
+        <div class="pointer06" onmouseover="showDetail('qc6')"></div>
+        <div class="qc6" id="qc6" onmouseout="hideDetail('qc6')">
+            <div class="qc6_text">
+                <p>
+                    <img src="img/ft.png" alt="" class="ft">丰田汽车公司创立于1933年，世界十大汽车工业公司之一，是一家总部设在日本爱知县丰田市和东京都文京区的日本汽车制造公司，属于三井财阀。
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

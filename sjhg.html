@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/sjhgmain.css" />
+    <title>首届回顾——中国国际进口博览会</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script>
+        function show(x, y) {
+            document.getElementById(x).style.opacity = 0.6;
+            document.getElementById(y).style.display = 'block';
+        }
+
+        function hide(x, y) {
+            document.getElementById(x).style.opacity = 1;
+            document.getElementById(y).style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="top">
+        <img src="img/pclogo.png" alt="" class="tp1">
+        <img src="img/slogan.png" alt="" class="tp2">
+        <img src="img/wjhgjb.png" alt="" class="tp3">
+        <div class="nav">
+            <a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+            <a href="index.html" class="active">进博介绍</a>
+            <a href="index.html">展品展区</a>
+            <a href="index.html">人文交流</a>
+            <a href="index.html">往届回顾</a>
+            <div id="nav-left" class="change"></div>
+        </div>
+    </div>
+    <script>
+        let marker = document.querySelector('#nav-left');
+        let nav = document.querySelector('.nav');
+        let item = document.querySelectorAll('.nav a');
+        nav.onclick = function() {
+            marker.classList.toggle('change');
+        }
+
+        function indicator(e) {
+            marker.style.left = e.offsetLeft + 'px';
+            marker.style.width = e.offsetWidth + 'px';
+            marker.style.display = "block";
+            marker.style.filter = 'hue-rotate(' + Math.random() * 0 + 'deg)'
+        }
+        item.forEach(link => {
+            link: addEventListener("click", (e) => {
+                indicator(e.target);
+            })
+        })
+
+        function addActiveClass() {
+            item.forEach((i) =>
+                i.classList.remove('active'));
+            this.classList.add('active');
+        }
+        item.forEach((i) =>
+            i.addEventListener('click', addActiveClass));
+    </script>
+    <div class="main">
+        <img src="img/xiong1.png" alt="" class="xiong1">
+        <img src="img/sjhg.png" alt="" class="wjhg">
+        <div class="news">
+            <h1>首届中国国际进口博览会总结</h1>
+            <div class="p">
+                <p>首届中国国际进口博览会是一个具有里程碑意义的盛会，它成功地展示了中国扩大对外开放的决心，同时也为世界各国提供了一个展示国家形象、开展国际贸易的国际公共平台。</p>
+                <p>首先，从规模和影响力来看，首届中国国际进口博览会取得了显著的成就。展览总面积超过27万平方米，有172个国家、地区和三个国际组织参会。吸引了来自全球各地的3600多家企业参展,以及超过40万境内外采购商到会洽谈合作。这一盛会的举办，不仅体现了中国作为世界第二大经济体的实力和影响力，也彰显了中国对于推动全球贸易和经济发展的积极贡献。</p>
+                <div style="text-align: center;"><img src="img/2018.jpg" alt="" width="80%"></div>
+                <p>其次，在促进国际经贸交流合作方面，首届进口博览会发挥了重要作用。通过举办一系列专业配套活动，如供需对接会、行业研讨会和产品发布会等，为企业提供了更多的合作机会。</p>
+                <p>此外，首届进口博览会还为各国企业提供了采购优质商品和服务的平台。经过严格筛选的参展外商企业，展示了其高质量的产品和服务，为国内外采购商提供了更多的选择。首届博览会的累计成交额就达到了578.3亿美元，其中，智能及高端准备展区成交额最高，达到164.6亿美元。</p>
+                <p>采购交易成果丰硕，按一年计，累计意向成交达到了578.3亿美元。其中，智能及高端装备展区表现最为亮眼，成交额达到了164.6亿美元。紧随其后的是食品及农产品展区，成交了126.8亿美元。汽车展区成交了119.9亿美元，医疗器械及医药保健展区成交了57.6亿美元，消费电子及家电展区成交了43.3亿美元，服装服饰及日用消费品展区成交了33.7亿美元，服务贸易展区成交了32.4亿美元。</p>
+            </div>
+            <br/>
+            <div class="tb">
+                <div id="container" style="height: 100%"></div>
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/echarts.min.js"></script>
+
+                <!-- Uncomment this line if you want to dataTool extension
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/extension/dataTool.min.js"></script>
+                -->
+                <!-- Uncomment this line if you want to use gl extension
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+                -->
+                <!-- Uncomment this line if you want to echarts-stat extension
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+                -->
+                <!-- Uncomment this line if you want to use map
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/china.js"></script>
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+                -->
+                <!-- Uncomment these two lines if you want to use bmap extension
+                <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+                <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.5.0/files/dist/extension/bmap.min.js"></script>
+                -->
+
+                <script type="text/javascript">
+                    var dom = document.getElementById('container');
+                    var myChart = echarts.init(dom, null, {
+                        renderer: 'canvas',
+                        useDirtyRect: false
+                    });
+                    var app = {};
+
+                    var option;
+
+                    option = {
+                        title: {
+                            text: '',
+                            subtext: '（单位：个/亿美元）'
+                        },
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data: ['参展企业数', '意向成交金额']
+                        },
+                        toolbox: {
+                            show: true,
+                            feature: {
+                                dataView: {
+                                    show: true,
+                                    readOnly: false
+                                },
+                                magicType: {
+                                    show: true,
+                                    type: ['line', 'bar']
+                                },
+                                restore: {
+                                    show: true
+                                },
+                                saveAsImage: {
+                                    show: true
+                                }
+                            }
+                        },
+                        calculable: true,
+                        xAxis: [{
+                            type: 'category',
+                            // prettier-ignore
+                            data: ['服务贸易', '汽车', '智能及高端装备', '消费电子及家电', '服装服饰及日用消费品', '医疗器械及医药保健', '食品及农产品']
+                        }],
+                        yAxis: [{
+                            type: 'value'
+                        }],
+                        series: [{
+                            name: '参展企业数',
+                            type: 'bar',
+                            data: [
+                                467, 69, 412, 93, 748, 309, 1519
+                            ],
+                            markPoint: {
+                                data: [{
+                                    type: 'max',
+                                    name: 'Max'
+                                }, {
+                                    type: 'min',
+                                    name: 'Min'
+                                }]
+                            },
+                            markLine: {
+                                data: [{
+                                    type: 'average',
+                                    name: 'Avg'
+                                }]
+                            }
+                        }, {
+                            name: '意向成交金额',
+                            type: 'bar',
+                            data: [
+                                32.4, 119.9, 164.6, 43.3, 33.7, 57.6, 126.8
+                            ],
+                            markPoint: {
+                                data: [{
+                                    name: 'Max',
+                                    value: 182.2,
+                                    xAxis: 7,
+                                    yAxis: 183
+                                }, {
+                                    name: 'Min',
+                                    value: 2.3,
+                                    xAxis: 11,
+                                    yAxis: 3
+                                }]
+                            },
+                            markLine: {
+                                data: [{
+                                    type: 'average',
+                                    name: 'Avg'
+                                }]
+                            }
+                        }]
+                    };
+
+                    if (option && typeof option === 'object') {
+                        myChart.setOption(option);
+                    }
+
+                    window.addEventListener('resize', myChart.resize);
+                </script>
+            </div>
+            <div class="p">
+                <p>最后，从推动中国经济高质量发展的角度来看，首届进口博览会也发挥了积极作用。通过引进先进生产要素和激发企业自主创新动力，加快国内产业升级换代，有利于改善国内供给，更好满足人民美好生活需要。同时，进口博览会的举办也有助于提升中国在全球经济治理中的话语权和影响力，推动构建开放型世界经济。</p>
+                <div style="text-align: center;"><img src="img/20182.jpg" alt="" width="70%"></div>
+                <p>总之，首届中国国际进口博览会是一个具有深远影响的盛会，它不仅促进了国际经贸交流合作，也为中国经济的高质量发展注入了新的动力。未来，中国将继续扩大对外开放，推动进口博览会越办越好，为全球贸易和经济发展作出更大的贡献。</p>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚开始 -->
+    <div class="footer">
+        <img src="img/yjbg.png" alt="" class="bg">
+        <div class="footer_content">
+            <img src="img/jxw.png" alt="">
+        </div>
+        <div class="footer_1">
+            <h3>指导老师</h3>
+            <ul class="ul">
+                <li>凡娅慧</li>
+                <li>毛&nbsp;&nbsp;&nbsp;艳</li>
+            </ul>
+        </div>
+        <div class="footer_zu">
+            <div class="footer_zu1">
+                <h3>团队成员</h3>
+                <ul class="ul">
+                    <li>张宇凡</li>
+                    <li>张&nbsp;&nbsp;&nbsp;宁</li>
+                    <li>张安琪</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_text">
+            <h3>资料来源</h3>
+            <ul class="ul">
+                <li>进口博览会官网</li>
+                <li>中国国家统计局</li>
+                <li>中国经济时报</li>
+                <li>央视新闻</li>
+            </ul>
+        </div>
+        <div class="xian">
+            <p>工具：Vscode&nbsp;Photoshop&nbsp;Echarts</p>
+        </div>
+    </div>
+
+</html>
