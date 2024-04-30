@@ -104,6 +104,7 @@ body {
 }
 
 .top .bg1 {
+    width:1920px;
     position: relative;
     float: right;
     margin-top: 2%;
